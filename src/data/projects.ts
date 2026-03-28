@@ -3,6 +3,7 @@ export interface Project {
   images: string[];
   tech: string[];
   color: string;
+  githubUrl?: string;
   en: {
     title: string;
     shortDesc: string;
@@ -22,7 +23,49 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "velojob",
-    images: ["/projects/velojob.png"],
+    images: [
+      "/projects/velojob/1.png",
+      "/projects/velojob/2.png",
+      "/projects/velojob/3.png",
+      "/projects/velojob/4.png",
+      "/projects/velojob/5.png",
+      "/projects/velojob/6.png",
+      "/projects/velojob/7.png",
+      "/projects/velojob/8.png",
+      "/projects/velojob/9.png",
+      "/projects/velojob/10.png",
+      "/projects/velojob/11.png",
+      "/projects/velojob/12.png",
+      "/projects/velojob/13.png",
+      "/projects/velojob/14.png",
+      "/projects/velojob/15.png",
+      "/projects/velojob/16.png",
+      "/projects/velojob/17.png",
+      "/projects/velojob/18.png",
+      "/projects/velojob/19.png",
+      "/projects/velojob/20.png",
+      "/projects/velojob/21.png",
+      "/projects/velojob/22.png",
+      "/projects/velojob/23.png",
+      "/projects/velojob/24.png",
+      "/projects/velojob/25.png",
+      "/projects/velojob/26.png",
+      "/projects/velojob/27.png",
+      "/projects/velojob/28.png",
+      "/projects/velojob/29.png",
+      "/projects/velojob/30.png",
+      "/projects/velojob/31.png",
+      "/projects/velojob/32.png",
+      "/projects/velojob/33.png",
+      "/projects/velojob/34.png",
+      "/projects/velojob/35.png",
+      "/projects/velojob/36.png",
+      "/projects/velojob/37.png",
+      "/projects/velojob/38.png",
+      "/projects/velojob/39.png",
+      "/projects/velojob/40.png",
+      "/projects/velojob/41.png"
+    ],
     tech: ["Next.js", ".NET Core", "SQL Server", "Cloudflare R2", "OpenRouteService"],
     color: "from-blue-500 to-cyan-400",
     en: {
@@ -155,16 +198,16 @@ export const projects: Project[] = [
   {
     id: "rag-assistant",
     images: ["/projects/rag-assistant.png"],
-    tech: ["Python", "pgvector", "Ollama", "LLM", "PostgreSQL", "RAG"],
+    tech: ["n8n", "Python", "pgvector", "Ollama", "LLM", "PostgreSQL", "RAG"],
     color: "from-violet-500 to-purple-400",
     en: {
       title: "Internal AI Assistant (RAG)",
       shortDesc: "End-to-end AI chatbot with RAG architecture using pgvector & local LLM.",
       description:
-        "A complete Internal AI Assistant built end-to-end using Retrieval-Augmented Generation (RAG) architecture. Uses pgvector for vector similarity search and Ollama for running a local Large Language Model, ensuring data privacy.",
+        "A complete Internal AI Assistant built end-to-end using n8n workflows and Retrieval-Augmented Generation (RAG) architecture. Uses pgvector for vector similarity search and Ollama for running a local Large Language Model, ensuring data privacy.",
       role: "AI Developer — Architecture, Vector DB, LLM Integration, Full Stack",
       highlights: [
-        "Full RAG pipeline: document ingestion → embedding → retrieval → generation",
+        "Full RAG pipeline automated with n8n: document ingestion → embedding → retrieval → generation",
         "pgvector for high-performance vector similarity search",
         "Local LLM deployment with Ollama (no cloud dependency)",
         "Complete data privacy — all processing happens on-premises",
@@ -174,13 +217,99 @@ export const projects: Project[] = [
       title: "ระบบ AI Assistant ภายใน (RAG)",
       shortDesc: "AI Chatbot แบบ RAG ครบวงจร โดยใช้ pgvector และ LLM ภายในเครื่อง",
       description:
-        "ระบบ Internal AI Assistant แบบครบวงจรที่สร้างด้วย Retrieval-Augmented Generation (RAG) ใช้ pgvector สำหรับค้นหาความคล้ายคลึงเชิงเวกเตอร์ และ Ollama สำหรับรัน LLM ภายในเครื่อง รับประกันความเป็นส่วนตัวของข้อมูล",
+        "ระบบ Internal AI Assistant แบบครบวงจรที่สร้างด้วย n8n และเทคโนโลยี Retrieval-Augmented Generation (RAG) ใช้ pgvector สำหรับค้นหาความคล้ายคลึงเชิงเวกเตอร์ และ Ollama สำหรับรัน LLM ภายในเครื่อง รับประกันความเป็นส่วนตัวของข้อมูล",
       role: "AI Developer — สถาปัตยกรรม, Vector DB, LLM Integration, Full Stack",
       highlights: [
-        "RAG pipeline ครบวงจร: นำเข้าเอกสาร → embedding → retrieval → generation",
+        "RAG pipeline ครบวงจร (จัดการด้วย n8n): นำเข้าเอกสาร → embedding → retrieval → generation",
         "pgvector สำหรับค้นหาเวกเตอร์ประสิทธิภาพสูง",
         "Deploy LLM ภายในเครื่องด้วย Ollama (ไม่พึ่งคลาวด์)",
         "ข้อมูลเป็นความลับ — ประมวลผลทั้งหมดภายในองค์กร",
+      ],
+    },
+  },
+  {
+    id: "keypoint-detection",
+    images: [
+      "/projects/Keypoint Detection/1.png",
+      "/projects/Keypoint Detection/2.png",
+      "/projects/Keypoint Detection/3.png",
+      "/projects/Keypoint Detection/4.png",
+      "/projects/Keypoint Detection/5.png",
+      "/projects/Keypoint Detection/6.png",
+      "/projects/Keypoint Detection/7.png",
+      "/projects/Keypoint Detection/8.png",
+      "/projects/Keypoint Detection/9.png",
+      "/projects/Keypoint Detection/10.png",
+      "/projects/Keypoint Detection/11.png",
+      "/projects/Keypoint Detection/12.png"
+    ],
+    tech: ["Python", "YOLOv8", "Computer Vision", "Gradio", "PyTorch", "OpenCV", "Roboflow"],
+    color: "from-amber-500 to-orange-400",
+    githubUrl: "https://github.com/wongsakron/yolov8-pose-dog",
+    en: {
+      title: "YOLOv8 Dog Pose Estimation",
+      shortDesc: "End-to-end computer vision project for dog keypoint detection using YOLOv8 and Gradio.",
+      description:
+        "An end-to-end Animal Pose Estimation project focused on dog keypoint detection using YOLOv8. The system is split into two main parts: a training pipeline integrated with Roboflow for dataset management, and an interactive Web Inference application built with Gradio for real-time testing on images, videos, and webcams.",
+      role: "Computer Vision Engineer — Dataset Preparation, Model Training, Web Interface Development",
+      highlights: [
+        "Custom-trained YOLOv8 Pose model specifically for dog keypoint detection",
+        "Integration with Roboflow API for streamlined dataset and weights management",
+        "Interactive web interface built with Gradio for real-time model inference",
+        "Support for analyzing static images, video files, and live webcam feeds",
+      ],
+    },
+    th: {
+      title: "ระบบตรวจจับท่าทางสุนัข (Dog Pose Estimation)",
+      shortDesc: "โปรเจกต์ Computer Vision ตรวจจับจุดสำคัญของสุนัขด้วย YOLOv8 พร้อมใช้งานผ่าน Gradio",
+      description:
+        "โปรเจกต์ Computer Vision แบบครบวงจรสำหรับการตรวจจับท่าทาง (Pose Estimation) ของสุนัขโดยใช้โมเดล YOLOv8 โครงสร้างระบบแบ่งเป็นสองส่วนหลักคือ ส่วนการเทรนโมเดลที่เชื่อมดึงข้อมูลชุดภาพจาก Roboflow และส่วน Web Inference ที่พัฒนาด้วย Gradio เพื่อให้ทดสอบโมเดลแบบเรียลไทม์ได้ผ่านหน้าเว็บ",
+      role: "Computer Vision Engineer — เตรียมชุดข้อมูล, เทรนโมเดล, พัฒนาเว็บแอปพลิเคชัน",
+      highlights: [
+        "ฝึกสอนโมเดล YOLOv8 Pose แบบเฉพาะทางสำหรับตรวจจับ Keypoints ของสุนัข",
+        "เชื่อมต่อระบบ Dataset อย่างมีประสิทธิภาพด้วยเครื่องมือจาก Roboflow",
+        "ส่วนติดต่อผู้ใช้งานผ่านเว็บแอปพลิเคชัน Gradio ที่ออกแบบมาให้ใช้งานและทดสอบโหมดต่างๆ ได้ง่าย",
+        "รองรับการทำนายผลลัพธ์จากโครงกระดูกสุนัข ผ่านรูปภาพ, ไฟล์วิดีโอ และกล้องเว็บแคมในเวลาจริง",
+      ],
+    },
+  },
+  {
+    id: "semantic-segmentation",
+    images: [
+      "/projects/Semantic-Segmentation/1.png",
+      "/projects/Semantic-Segmentation/2.png",
+      "/projects/Semantic-Segmentation/3.png",
+      "/projects/Semantic-Segmentation/4.png",
+      "/projects/Semantic-Segmentation/5.png"
+    ],
+    tech: ["Python", "PyTorch", "Semantic Segmentation", "Roboflow", "MobileNetV3", "Computer Vision"],
+    color: "from-teal-500 to-emerald-400",
+    en: {
+      title: "Semantic Segmentation (HOI)",
+      shortDesc: "An OOM-safe PyTorch semantic segmentation pipeline with LR-ASPP MobileNetV3.",
+      description:
+        "A robust end-to-end Semantic Segmentation pipeline built with PyTorch, focusing on Human Object Interaction. The system utilizes an LR-ASPP MobileNetV3 architecture optimized for consumer GPUs. It features a custom OOM-safe training loop that automatically reduces batch size and image dimensions to prevent memory crashes, along with support for Mixed Precision (AMP) and Gradient Accumulation.",
+      role: "Computer Vision Engineer — Architecture, Pipeline Development",
+      highlights: [
+        "LR-ASPP MobileNetV3 architecture optimized for low-memory GPUs",
+        "OOM-Safe Training Loop with automatic batch and image size adjustment",
+        "Support for Mixed Precision (AMP) and Gradient Accumulation",
+        "Integration with Roboflow API for streamlined dataset management",
+        "Comprehensive custom evaluation metrics (mIoU, Pixel Accuracy, per-class F1-Score)",
+      ],
+    },
+    th: {
+      title: "ระบบแบ่งส่วนภาพ (Semantic Segmentation)",
+      shortDesc: "ไพป์ไลน์ Semantic Segmentation ด้วย PyTorch ประหยัดทรัพยากร พร้อมระบบป้องกัน OOM",
+      description:
+        "ระบบ Semantic Segmentation แบบครบวงจรพัฒนาด้วย PyTorch สำหรับงานวิเคราะห์ปฏิสัมพันธ์ระหว่างคนและวัตถุ (HOI) โดยเลือกใช้สถาปัตยกรรม LR-ASPP MobileNetV3 ที่เหมาะสมกับการ์ดจอบน PC ทั่วไป จุดเด่นคือระบบการเทรนแบบ OOM-Safe ที่ลดมิติภาพหรือ batch size ให้โดยอัตโนมัติเมื่อเจอปัญหา VRAM ไม่พอ พร้อมรองรับ Mixed Precision (AMP)",
+      role: "Computer Vision Engineer — ออกแบบสถาปัตยกรรม, พัฒนา Data Pipeline",
+      highlights: [
+        "เลือกใช้โมเดล LR-ASPP MobileNetV3 สถาปัตยกรรมที่กินทรัพยากรน้อย แต่ความแม่นยำสูง",
+        "ออกแบบระบบ OOM-Safe Training ช่วยป้องกันระบบหยุดชะงักตอน VRAM เต็ม",
+        "รองรับการทำงานด้วย Mixed Precision (AMP) และ Gradient Accumulation",
+        "เชื่อมต่อระบบโหลด Dataset อย่างชาญฉลาด ใช้งานผ่าน API ของ Roboflow",
+        "ปรับแต่งระบบตรวจสอบวัดผลเอง (mIoU, Pixel Accuracy และ F1-Score แยกรายคลาส)",
       ],
     },
   },

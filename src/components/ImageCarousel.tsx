@@ -1,18 +1,57 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
 
 interface ImageCarouselProps {
   images: string[];
   alt: string;
 }
 
+/**
+ * Optimized carousel: only preloads current ±1 images.
+ * Thumbnails use native lazy loading + small sizes.
+ */
 export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(0);
+  const [loadedSet, setLoadedSet] = useState<Set<number>>(new Set([0]));
+  const thumbRef = useRef<HTMLDivElement>(null);
+
+  // Preload current ± 1 neighbors
+  useEffect(() => {
+    const toLoad = [current];
+    if (current > 0) toLoad.push(current - 1);
+    if (current < images.length - 1) toLoad.push(current + 1);
+
+    setLoadedSet((prev) => {
+      const next = new Set(prev);
+      let changed = false;
+      for (const idx of toLoad) {
+        if (!next.has(idx)) {
+          next.add(idx);
+          changed = true;
+        }
+      }
+      return changed ? next : prev;
+    });
+  }, [current, images.length]);
+
+  // Scroll active thumbnail into view
+  useEffect(() => {
+    if (thumbRef.current) {
+      const activeThumb = thumbRef.current.children[current] as HTMLElement;
+      if (activeThumb) {
+        activeThumb.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "center",
+        });
+      }
+    }
+  }, [current]);
 
   const paginate = useCallback(
     (dir: number) => {
@@ -35,6 +74,8 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
 
   if (images.length === 0) return null;
 
+  const shouldLoad = (i: number) => loadedSet.has(i);
+
   return (
     <div className="relative w-full">
       {/* Main image area */}
@@ -50,12 +91,18 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
             className="absolute inset-0"
           >
+            {/* Loading placeholder */}
+            <div className="absolute inset-0 flex items-center justify-center bg-white/[0.02]">
+              <Loader2 className="w-8 h-8 text-white/20 animate-spin" />
+            </div>
             <Image
               src={images[current]}
               alt={`${alt} - ${current + 1}`}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 900px"
+              priority={current === 0}
+              loading={current === 0 ? "eager" : "lazy"}
             />
           </motion.div>
         </AnimatePresence>
@@ -88,9 +135,12 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
         )}
       </div>
 
-      {/* Thumbnail strip — only show if multiple images */}
+      {/* Thumbnail strip — lazy loaded, scrollable */}
       {images.length > 1 && (
-        <div className="flex gap-2 sm:gap-3 mt-3 sm:mt-4 overflow-x-auto pb-2 scrollbar-hide">
+        <div
+          ref={thumbRef}
+          className="flex gap-2 sm:gap-3 mt-3 sm:mt-4 overflow-x-auto pb-2 scrollbar-hide"
+        >
           {images.map((img, i) => (
             <button
               key={i}
@@ -104,13 +154,20 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
                   : "border-transparent opacity-50 hover:opacity-80"
               }`}
             >
-              <Image
-                src={img}
-                alt={`Thumbnail ${i + 1}`}
-                fill
-                className="object-cover"
-                sizes="96px"
-              />
+              {shouldLoad(i) || Math.abs(i - current) <= 3 ? (
+                <Image
+                  src={img}
+                  alt={`Thumbnail ${i + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="96px"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="w-full h-full bg-white/[0.04] flex items-center justify-center">
+                  <span className="text-[10px] text-white/20 font-mono">{i + 1}</span>
+                </div>
+              )}
             </button>
           ))}
         </div>

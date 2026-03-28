@@ -132,13 +132,18 @@ export default function ProjectDetailPage({
               {lang === "en" ? "Source Code" : "ซอร์สโค้ด"}
             </h3>
             <a
-              href="https://github.com/wongsakron"
+              href={project.githubUrl || "https://github.com/wongsakron"}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors truncate"
+              title={project.githubUrl || "https://github.com/wongsakron"}
             >
-              <Code2 className="w-4 h-4" />
-              github.com/wongsakron
+              <Code2 className="w-4 h-4 shrink-0" />
+              <span className="truncate">
+                {project.githubUrl
+                  ? project.githubUrl.replace("https://github.com/", "")
+                  : "github.com/wongsakron"}
+              </span>
             </a>
           </div>
         </motion.div>
