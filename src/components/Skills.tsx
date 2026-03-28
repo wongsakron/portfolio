@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { LayoutTemplate, Server, Database, Code2, Wrench } from "lucide-react";
+import { LayoutTemplate, Server, Database, Code2, Wrench, Container, Monitor } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 
 const skillData = [
@@ -21,7 +21,19 @@ const skillData = [
     key: "database" as const,
     icon: Database,
     color: "text-emerald-400",
-    items: ["PostgreSQL", "SQL Server", "MySQL", "MongoDB", "Supabase", "Docker", "CI/CD", "Git", "Cloudflare R2", "Elastic", "Kibana", "n8n", "Ubuntu"],
+    items: ["PostgreSQL", "SQL Server", "MySQL", "MongoDB", "Supabase", "Elastic"],
+  },
+  {
+    key: "devops" as const,
+    icon: Container,
+    color: "text-orange-400",
+    items: ["Docker", "CI/CD", "Git", "Cloudflare R2", "Kibana", "n8n"],
+  },
+  {
+    key: "server" as const,
+    icon: Monitor,
+    color: "text-cyan-400",
+    items: ["Ubuntu", "Linux"],
   },
   {
     key: "languages" as const,

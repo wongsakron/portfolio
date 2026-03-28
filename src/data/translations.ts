@@ -71,7 +71,9 @@ export const translations = {
       categories: {
         frontend: "Frontend & UI",
         backend: "Backend & API",
-        database: "Database & DevOps",
+        database: "Database",
+        devops: "DevOps & Tools",
+        server: "Server & OS",
         languages: "Programming Languages",
       },
     },
@@ -159,7 +161,9 @@ export const translations = {
       categories: {
         frontend: "Frontend & UI",
         backend: "Backend & API",
-        database: "Database & DevOps",
+        database: "ฐานข้อมูล",
+        devops: "DevOps & เครื่องมือ",
+        server: "เซิร์ฟเวอร์ & OS",
         languages: "ภาษาโปรแกรม",
       },
     },
