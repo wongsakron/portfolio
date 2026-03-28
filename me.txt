@@ -1,0 +1,78 @@
+WONGSAKORN KHAOPHONG (วงศกร ขาวผ่อง)
+อ.ทุ่งสง จ.นครศรีธรรมราช | 081-490-7239
+wongsakron.kpg@gmail.com | github.com/wongsakron
+บทสรุปประวัติ(PROFESSIONAL SUMMARY)
+นักศึกษาชั้นปีที่ 4 สายเทคโนโลยีสารสนเทศ มีความเชี่ยวชาญด้านการพัฒนาโปรแกรมแบบ Full-Stack, การทำ Automation
+และการวิเคราะห์ข้อมูล มีประสบการณ์จริงจากการทำงานฟรีแลนซ์ สหกิจศึกษา และการรับผิดชอบโปรเจกต์พัฒนาระบบ
+ขนาดใหญ่ตั้งแต่เริ่มต้นจนใช้งานได้จริง ให้ความสำคัญกับการเขียนโค้ดที่อ่านง่าย ( Clean Code) สามารถอ่าน
+และทำความเข้าใจ Document เพื่อเรียนรู้เทคโนโลยีใหม่ ๆ ได้อย่างรวดเร็ว พร้อมทำงานร่วมกับทีมเพื่อสร้างผลงาน
+ที่ตอบโจทย์ความต้องการและเพิ่มประสิทธิภาพสูงสุดให้กับองค์กร (พร้อมเริ่มงาน 17 เม.ย. 2569)
+ประวัติการทำงาน (WORK EXPERIENCE)
+นักศึกษาสหกิจศึกษา (Full Stack Developer) | H S P Intelligence Company Limited | ธ.ค. 2568 – มี.ค. 2569
+• โปรเจกต์ VeloJob (ระบบเว็บไซต์สมัครงาน Biosoft): ออกแบบสถาปัตยกรรมและพัฒนาระบบทั้งหมด
+ตั้งแต่เริ่มต้น (End-to-End) ด้วย Next.js และ .NET Core Web API พร้อมออกแบบฐานข้อมูล SQL Server
+• พัฒนาระบบแผนที่ค้นหางานและนำทาง (Smart Location-Based Routing) แบบเลี้ยวต่อเลี้ยวโดยใช้
+OpenRouteService API
+• บูรณาการ AI ช่วยอ่านและดึงข้อมูลจากไฟล์เรซูเม่อัตโนมัติ (AI Resume Parsing) เพื่อเพิ่มประสบการณ์ใช้งานที่ดี (UX)
+• ออกแบบระบบรักษาความปลอดภัยข้อมูล (RBAC) ตามมาตรฐาน PDPA อย่างเข้มงวด และจัดการระบบจัดเก็บไฟล์
+ประสิทธิภาพสูงบน Cloudflare R2 เพื่อลดต้นทุนแบนด์วิดท์
+• พัฒนาระบบออกรายงาน (Report) ข้อมูลเอกสารส่วนบุคคล ด้วยภาษา C# ร่วมกับไฟล์ RDLC พร้อมจัดทำเอกสาร
+ทางเทคนิคเพื่อให้ทีมนำไปพัฒนาต่อได้ง่าย
+ฟรีแลนซ์ และ นักศึกษาฝึกงาน (Full Stack Developer) | Neer Code Co., Ltd. | ก.พ. 2568 – มี.ค. 2569
+(ฟรีแลนซ์: ส.ค. 2568 – มี.ค. 2569 | ฝึกงาน: ก.พ. 2568 – มี.ค. 2568)
+• พัฒนาระบบ Interactive Dashboard แบบเรียลไทม์ด้วย Kibana Maps และ Geo-index เพื่อแสดงผลข้อมูล
+เชิงพื้นที่ระดับอำเภอ/ตำบล จาก PostgreSQL
+• พัฒนาและเทรนโมเดล Machine Learning (Python) วิเคราะห์สีปัสสาวะเพื่อใช้คัดกรองสารเสพติดเบื้องต้น
+ณ โรงพยาบาลค่ายวชิราวุธ
+• ออกแบบระบบ Automation ด้วย n8n สำหรับมอนิเตอร์อุณหภูมิภายในพื้นที่ พร้อมระบบ Event-Driven
+แจ้งเตือนเรียลไทม์ผ่าน Telegram และ LINE
+• พัฒนาระบบ Internal AI Assistant (End-to-End) แบบ RAG โดยใช้ pgvector และโมเดลภาษา LLM (Ollama)
+ประวัติการศึกษา (EDUCATION)
+• ปริญญาตรี สาขาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์และเทคโนโลยี| GPA: 3.87 2565 – 2569
+มหาวิทยาลัยเทคโนโลยีราชมงคลศรีวิชัย
+ทักษะความสามารถ (SKILLS)
+• Web Development: Next.js, Angular, .NET Core Web API, Tailwind CSS, Bootstrap 5
+• Programming Languages: Python, C#, C, Java
+• Database: PostgreSQL, SQL Server, MySQL, MongoDB, Supabase
+• Tools & DevOps: Git, GitHub, CI/CD, Docker, Cloudflare, Elastic, Kibana, n8n, Ubuntu
+
+WONGSAKORN KHAOPHONG
+Thung Song, Nakhon Si Thammarat | 081-490-7239
+wongsakron.kpg@gmail.com | github.com/wongsakron
+PROFESSIONAL SUMMARY
+A 4th-year Information Technology student with expertise in Full-Stack development, automation, and data
+analysis. Possesses practical experience from freelance work, cooperative education, and taking full ownership
+of large-scale system development from scratch to production. Highly values writing clean and maintainable
+code, with a strong ability to read technical documentation to learn new technologies quickly. A collaborative
+team player dedicated to delivering impactful solutions that meet organizational needs and maximize efficiency.
+(Available to start: Apr 17, 2026)
+WORK EXPERIENCE
+Co-operative Education Student (Full Stack Developer) | H S P Intelligence Company Limited | Dec 2025 – Mar 2026
+• VeloJob Project (Biosoft Job Portal): Designed the architecture and developed the entire end-to-end
+system using Next.js and .NET Core Web API, along with designing the SQL Server database.
+• Developed a Smart Location-Based Routing system with turn-by-turn navigation using the
+OpenRouteService API.
+• Integrated an AI Resume Parsing feature to extract data automatically, significantly enhancing the user
+experience (UX).
+• Designed a strict Role-Based Access Control (RBAC) security system compliant with PDPA standards
+and managed a high-performance file storage system on Cloudflare R2 to reduce bandwidth costs.
+• Developed personal document reporting systems utilizing C# and RDLC files, and created clear
+technical documentation for future team development.
+Freelance & Intern (Full Stack Developer) | Neer Code Co., Ltd. | Feb 2025 – Mar 2026
+(Freelance: Aug 2025 – Mar 2026 | Intern: Feb 2025 – Mar 2025)
+• Built real-time interactive dashboards using Kibana Maps and Geo-index to visualize spatial data at the
+district and sub-district levels from PostgreSQL.
+• Developed and trained a Python-based Machine Learning model to analyze urine color for preliminary
+drug screening at Fort Vajiravudh Hospital.
+• Designed an automation system using n8n for indoor temperature monitoring, complete with an Event -
+Driven real-time alert system via Telegram and LINE.
+• Developed an end-to-end Internal AI Assistant using RAG architecture, utilizing pgvector and a local
+LLM (Ollama).
+EDUCATION
+• Bachelor of Science in Information Technology, Faculty of Science and Technology | GPA: 3.87 2022 – 2026
+Rajamangala University of Technology Srivijaya
+SKILLS
+• Web Development: Next.js, Angular, .NET Core Web API, Tailwind CSS, Bootstrap 5
+• Programming Languages: Python, C#, C, Java
+• Database: PostgreSQL, SQL Server, MySQL, MongoDB, Supabase
+• Tools & DevOps: Git, GitHub, CI/CD, Docker, Cloudflare, Elastic, Kibana, n8n, Ubuntu
