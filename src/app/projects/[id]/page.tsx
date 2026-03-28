@@ -1,6 +1,6 @@
 "use client";
 
-import { use } from "react";
+import { use, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Code2 } from "lucide-react";
@@ -17,6 +17,11 @@ export default function ProjectDetailPage({
   const { id } = use(params);
   const router = useRouter();
   const { lang, t } = useLang();
+
+  // Ensure we start at the top of the page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   const project = projects.find((p) => p.id === id);
 
