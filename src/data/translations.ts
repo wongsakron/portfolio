@@ -1,0 +1,182 @@
+export type Lang = "en" | "th";
+
+export const translations = {
+  en: {
+    nav: {
+      about: "About",
+      experience: "Experience",
+      projects: "Projects",
+      skills: "Skills",
+      contact: "Contact",
+    },
+    hero: {
+      badge: "Available for work — Apr 17, 2026",
+      greeting: "Hello, I'm",
+      name: "Wongsakorn",
+      surname: "Khaophong",
+      role: "Full Stack Developer",
+      summary:
+        "A 4th-year Information Technology student with expertise in Full-Stack development, automation, and data analysis. I take full ownership of large-scale system development from scratch to production — writing clean, maintainable code.",
+      contactBtn: "Contact Me",
+      resumeBtn: "Download Resume",
+      githubBtn: "GitHub",
+    },
+    experience: {
+      title: "Experience",
+      jobs: [
+        {
+          role: "Full Stack Developer",
+          type: "Co-operative Education",
+          company: "H S P Intelligence Company Limited",
+          period: "Dec 2025 – Mar 2026",
+          bullets: [
+            "VeloJob Project (Biosoft Job Portal): Designed the architecture and developed the entire end-to-end system using Next.js and .NET Core Web API, along with designing the SQL Server database.",
+            "Developed a Smart Location-Based Routing system with turn-by-turn navigation using the OpenRouteService API.",
+            "Integrated an AI Resume Parsing feature to extract data automatically, significantly enhancing the user experience (UX).",
+            "Designed a strict Role-Based Access Control (RBAC) security system compliant with PDPA standards and managed a high-performance file storage system on Cloudflare R2.",
+            "Developed personal document reporting systems utilizing C# and RDLC files, and created clear technical documentation for future team development.",
+          ],
+        },
+        {
+          role: "Full Stack Developer",
+          type: "Freelance & Intern",
+          company: "Neer Code Co., Ltd.",
+          period: "Feb 2025 – Mar 2026",
+          periodDetail: "Freelance: Aug 2025 – Mar 2026 | Intern: Feb 2025 – Mar 2025",
+          bullets: [
+            "Built real-time interactive dashboards using Kibana Maps and Geo-index to visualize spatial data at the district and sub-district levels from PostgreSQL.",
+            "Developed and trained a Python-based Machine Learning model to analyze urine color for preliminary drug screening at Fort Vajiravudh Hospital.",
+            "Designed an automation system using n8n for indoor temperature monitoring, complete with an Event-Driven real-time alert system via Telegram and LINE.",
+            "Developed an end-to-end Internal AI Assistant using RAG architecture, utilizing pgvector and a local LLM (Ollama).",
+          ],
+        },
+      ],
+    },
+    projects: {
+      title: "Featured Projects",
+      subtitle: "A selection of real-world projects I've built from scratch",
+      viewDetails: "View Details",
+      close: "Close",
+      techStack: "Tech Stack",
+      highlights: "Key Highlights",
+      role: "My Role",
+    },
+    skills: {
+      title: "Skills & Education",
+      education: "Education",
+      university: "Rajamangala University of Technology Srivijaya",
+      degree: "B.S. Information Technology",
+      year: "2022 – 2026",
+      gpa: "GPA: 3.87",
+      categories: {
+        frontend: "Frontend & UI",
+        backend: "Backend & API",
+        database: "Database & DevOps",
+        languages: "Programming Languages",
+      },
+    },
+    contact: {
+      title: "Get In Touch",
+      subtitle: "I'm currently open for new opportunities. Let's connect!",
+      email: "Email",
+      phone: "Phone",
+      location: "Location",
+      locationValue: "Thung Song, Nakhon Si Thammarat",
+      hireMeBtn: "Send Email",
+    },
+    footer: {
+      built: "Designed & Built by Wongsakorn Khaophong",
+      rights: "All rights reserved.",
+    },
+  },
+  th: {
+    nav: {
+      about: "เกี่ยวกับ",
+      experience: "ประสบการณ์",
+      projects: "ผลงาน",
+      skills: "ทักษะ",
+      contact: "ติดต่อ",
+    },
+    hero: {
+      badge: "พร้อมเริ่มงาน — 17 เม.ย. 2569",
+      greeting: "สวัสดีครับ, ผม",
+      name: "วงศกร",
+      surname: "ขาวผ่อง",
+      role: "Full Stack Developer",
+      summary:
+        "นักศึกษาชั้นปีที่ 4 สายเทคโนโลยีสารสนเทศ มีความเชี่ยวชาญด้านการพัฒนาโปรแกรมแบบ Full-Stack, การทำ Automation และการวิเคราะห์ข้อมูล มีประสบการณ์จริงจากการทำงานฟรีแลนซ์ สหกิจศึกษา และการรับผิดชอบโปรเจกต์พัฒนาระบบขนาดใหญ่ตั้งแต่เริ่มต้นจนใช้งานได้จริง ให้ความสำคัญกับการเขียนโค้ดที่อ่านง่าย (Clean Code)",
+      contactBtn: "ติดต่อฉัน",
+      resumeBtn: "ดาวน์โหลด Resume",
+      githubBtn: "GitHub",
+    },
+    experience: {
+      title: "ประสบการณ์การทำงาน",
+      jobs: [
+        {
+          role: "Full Stack Developer",
+          type: "สหกิจศึกษา",
+          company: "H S P Intelligence Company Limited",
+          period: "ธ.ค. 2568 – มี.ค. 2569",
+          bullets: [
+            "โปรเจกต์ VeloJob (ระบบเว็บไซต์สมัครงาน Biosoft): ออกแบบสถาปัตยกรรมและพัฒนาระบบทั้งหมดตั้งแต่เริ่มต้น (End-to-End) ด้วย Next.js และ .NET Core Web API พร้อมออกแบบฐานข้อมูล SQL Server",
+            "พัฒนาระบบแผนที่ค้นหางานและนำทาง (Smart Location-Based Routing) แบบเลี้ยวต่อเลี้ยวโดยใช้ OpenRouteService API",
+            "บูรณาการ AI ช่วยอ่านและดึงข้อมูลจากไฟล์เรซูเม่อัตโนมัติ (AI Resume Parsing) เพื่อเพิ่มประสบการณ์ใช้งานที่ดี (UX)",
+            "ออกแบบระบบรักษาความปลอดภัยข้อมูล (RBAC) ตามมาตรฐาน PDPA อย่างเข้มงวด และจัดการระบบจัดเก็บไฟล์ประสิทธิภาพสูงบน Cloudflare R2",
+            "พัฒนาระบบออกรายงาน (Report) ข้อมูลเอกสารส่วนบุคคล ด้วยภาษา C# ร่วมกับไฟล์ RDLC พร้อมจัดทำเอกสารทางเทคนิค",
+          ],
+        },
+        {
+          role: "Full Stack Developer",
+          type: "ฟรีแลนซ์ & ฝึกงาน",
+          company: "Neer Code Co., Ltd.",
+          period: "ก.พ. 2568 – มี.ค. 2569",
+          periodDetail: "ฟรีแลนซ์: ส.ค. 2568 – มี.ค. 2569 | ฝึกงาน: ก.พ. 2568 – มี.ค. 2568",
+          bullets: [
+            "พัฒนาระบบ Interactive Dashboard แบบเรียลไทม์ด้วย Kibana Maps และ Geo-index เพื่อแสดงผลข้อมูลเชิงพื้นที่ระดับอำเภอ/ตำบล จาก PostgreSQL",
+            "พัฒนาและเทรนโมเดล Machine Learning (Python) วิเคราะห์สีปัสสาวะเพื่อใช้คัดกรองสารเสพติดเบื้องต้น ณ โรงพยาบาลค่ายวชิราวุธ",
+            "ออกแบบระบบ Automation ด้วย n8n สำหรับมอนิเตอร์อุณหภูมิภายในพื้นที่ พร้อมระบบ Event-Driven แจ้งเตือนเรียลไทม์ผ่าน Telegram และ LINE",
+            "พัฒนาระบบ Internal AI Assistant (End-to-End) แบบ RAG โดยใช้ pgvector และโมเดลภาษา LLM (Ollama)",
+          ],
+        },
+      ],
+    },
+    projects: {
+      title: "ผลงานที่โดดเด่น",
+      subtitle: "ผลงานจากโปรเจกต์จริงที่ฉันสร้างตั้งแต่เริ่มต้น",
+      viewDetails: "ดูรายละเอียด",
+      close: "ปิด",
+      techStack: "เทคโนโลยีที่ใช้",
+      highlights: "จุดเด่นสำคัญ",
+      role: "บทบาทของข้าพเจ้า",
+    },
+    skills: {
+      title: "ทักษะ & การศึกษา",
+      education: "การศึกษา",
+      university: "มหาวิทยาลัยเทคโนโลยีราชมงคลศรีวิชัย",
+      degree: "ปริญญาตรี สาขาเทคโนโลยีสารสนเทศ",
+      year: "2565 – 2569",
+      gpa: "เกรดเฉลี่ย: 3.87",
+      categories: {
+        frontend: "Frontend & UI",
+        backend: "Backend & API",
+        database: "Database & DevOps",
+        languages: "ภาษาโปรแกรม",
+      },
+    },
+    contact: {
+      title: "ติดต่อฉัน",
+      subtitle: "ผมพร้อมรับโอกาสใหม่ ๆ มาพูดคุยกันครับ!",
+      email: "อีเมล",
+      phone: "โทรศัพท์",
+      location: "ที่อยู่",
+      locationValue: "อ.ทุ่งสง จ.นครศรีธรรมราช",
+      hireMeBtn: "ส่งอีเมล",
+    },
+    footer: {
+      built: "ออกแบบและพัฒนาโดย วงศกร ขาวผ่อง",
+      rights: "สงวนลิขสิทธิ์",
+    },
+  },
+} as const;
+
+export type Translations = typeof translations.en;

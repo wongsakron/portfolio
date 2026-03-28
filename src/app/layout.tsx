@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -10,7 +11,21 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Wongsakorn Khaophong | Full Stack Developer",
-  description: "Portfolio of Wongsakorn Khaophong - A passionate Full Stack Developer specializing in Next.js, .NET Core, and AI integrations.",
+  description:
+    "Portfolio of Wongsakorn Khaophong — Full Stack Developer specializing in Next.js, .NET Core, AI integrations, and automation. Available for hire.",
+  keywords: [
+    "Full Stack Developer",
+    "Next.js",
+    ".NET Core",
+    "Portfolio",
+    "Wongsakorn Khaophong",
+  ],
+  openGraph: {
+    title: "Wongsakorn Khaophong | Full Stack Developer",
+    description:
+      "Portfolio of Wongsakorn Khaophong — Full Stack Developer specializing in Next.js, .NET Core, AI integrations, and automation.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -19,11 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} h-full antialiased scroll-smooth`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }
